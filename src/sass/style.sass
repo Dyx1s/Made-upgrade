@@ -138,6 +138,7 @@ nav
 			font-size: 15px
 			font-weight: 400
 			background: rgba(255,255,255,0)
+		
 
 
 .promo
@@ -166,7 +167,7 @@ nav
 		letter-spacing: 0.245em;
 		text-transform: uppercase;
 		color: #000000;
-.main_btn
+.main_btn, .main_btn_order
 	margin: 26px 0 0 113px
 	font-weight: 500
 	font-size: 15px
@@ -179,11 +180,65 @@ nav
 	background: #050505
 	box-shadow: 0px 4px 7px rgba(39, 57, 82, 0.39)
 	border-radius: 3px
-
-			
-			
-			
-
+	a
+		background: #000000
+		z-index: 100
+	.btnfos
+		color: #fff
+		cursor: pointer
+		display: block
+		font-size: 16px
+		font-weight: 400
+		line-height: 45px
+		width: 211px
+		height: 60px
+		margin: 0px auto 2em
+		position: relative
+		width: 100%
+		border: none
+	@media (min-width: 400px)
+		.btnfos
+		    display: inline-block
+		    margin-right: 2.5em
+		.btnfos:nth-of-type(even) 
+		    &:nth-of-type(even)
+		      margin-right: 0
+	@media (min-width: 600px)
+		.btnfos
+		    &:nth-of-type(even)
+		      margin-right: 2.5em
+		    &:nth-of-type(5)
+		      margin-right: 0
+		.btnfos-4
+		  overflow: hidden
+		  position: relative
+		  padding-top: 5px
+		  span
+		    z-index: 20
+		    font-weight: 500px
+		    font-size: 15px;
+		    line-height: 18px;
+		    text-align: center;
+		    letter-spacing: 0.135em;
+		  &:after
+		    background: #fff
+		    content: ""
+		    height: 155px
+		    left: -75px
+		    opacity: .3
+		    position: absolute
+		    top: -50px
+		    width: 50px
+		    -webkit-transition: all 1050ms cubic-bezier(0.19, 1, 0.22, 1)
+		    transition: all 1050ms cubic-bezier(0.19, 1, 0.22, 1)
+		    -webkit-transform: rotate(35deg)
+		    -ms-transform: rotate(35deg)
+		    transform: rotate(35deg)
+		    z-index: -10
+		  &:hover:after
+		    left: 120%
+		    -webkit-transition: all 1050ms cubic-bezier(0.19, 1, 0.22, 1)
+		    transition: all 1050ms cubic-bezier(0.19, 1, 0.22, 1)			  			  			
 
 .slayden-savnena
   height: 74vw
@@ -311,9 +366,6 @@ input#pedsumid
 	margin: 0 20px 40px 0
 
 
-
-
-
 .catalog
 	width: 100%
 	min-height: 680px
@@ -408,53 +460,6 @@ input#pedsumid
   -o-border-radius: 50%
   border-radius: 50%		
 
-.director
-	/** background: rgba(200, 188, 217, 0.39); **/
-	float: right
-	width: 49%
-    margin: 100px 50px
-    text-align: justify
-    display: inline-block
-	p
-		margin: 103px 0 125px 153px
-		font-weight: 200
-		font-size: 21px
-		line-height: 35px
-		text-align: justify
-		letter-spacing: -0.02em
-		color: #000000
-	.doctor
-		float: inherit
-		justify-content: center
-		margin-top: 64px
-		font-weight: 500
-		font-size: 19px
-		line-height: 32px
-		letter-spacing: 0.09em
-		color: #000000
-.link_authorities
-	margin-top: 80px
-	padding-left: 20px
-	a
-		color: #CFC9DA
-		font-weight: 500
-		font-size: 15px
-		line-height: 23px
-		text-align: center
-		letter-spacing: 0.065em
-		&:hover
-			text-decoration: none
-			color: #694382
-			transition: 0.6s all
-	li
-		list-style-image: url('../icons/arrowul.png')
-		&:hover
-			content: '' 
-			list-style-image: url('../icons/arrowrl.png')
-
-/** .clinic_slider
-	margin: 325px auto 126px 	 **/			
-  
 .order
 	width: 100% 
 	min-height: 846px
@@ -494,19 +499,9 @@ input#pedsumid
 		color: #000000 
 		margin: 24px 0px
 		padding: 0 44px 0 44px	
-	.order_btn
-		font-weight: 500
-		font-size: 15px
-		line-height: 18px
-		text-align: center
-		letter-spacing: 0.135em
-		color: #FFFFFF
-		width: 211px
-		height: 60px
-		background: #050505
-		box-shadow: 0px 4px 7px rgba(39, 57, 82, 0.39)
-		border-radius: 3px
-		margin-left: 160px	
+.main_btn_order
+	margin: 26px 0 0 175px		
+		
 .base
 	width: 50%
 	display: block
