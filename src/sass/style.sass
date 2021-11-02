@@ -68,16 +68,15 @@ nav
 	z-index: 5
 	background: rgba(255,255,255,0);
 	position: absolute
-.menu
+.menu //из другой менюхи
 	display: flex
-	justify-content: right
-	padding: 50px 0 93px 0
+	justify-content: space-between
+	padding: 50px 0 93px 0 
+	margin: 0
 	list-style-type: none
 	z-index: 2
-	.logo_text
-		position: absolute
-		right: 33%
-		margin: 23px 730px 0 0
+	.logo_text 
+		margin: 23px 615px 0 40px
 		width: 167px
 		height: 15px
 		font-weight: bold
@@ -85,59 +84,36 @@ nav
 		line-height: 19px
 		letter-spacing: 0.205em
 		text-transform: uppercase
-		color: #000000
+		color: #000000	
 	&_logo
 		position: relative
 		display: block
 		margin: 21px 0 0 -5px
-		padding: 0 20px 0 0 
-	&_item1
+		cursor: pointer
+		padding: 0 20px 0 0
+	&_item
+		height: 0
+	&_link
 		position: relative
 		display: block
-		&:hover .menu_link_btn
-			position: relative
-			text-decoration: none
-			border: 1px dashed
-			box-sizing: border-box
-			border-radius: 100px
-			margin-top: 8px
-			padding: 8px 
-			color: #000000
-			transition: all 0.3s ease
-	&_link
-		position: absolute
-		display: block
-		right: 480px
-		margin-right: 39px
+		right: 25px
+		margin-left: 0px
 		padding: 15px 0 15px 
-		line-height: 38px;
-		border: none
+		line-height: 38px
 		letter-spacing: 0.14em;
 		color: #000000
 		font-size: 15px
 		font-weight: 400
 		background: rgba(255,255,255,0)
 		&:hover
-			text-decoration: none
-			border: 1px dashed
-			box-sizing: border-box
-			border-radius: 100px
-			margin-top: 8px
-			padding: 8px 
-			color: #000000
-			transition: all 0.3s ease
-		&_btn
-			display: block
 			position: relative
-			padding: 15px 0 15px 
-			margin-right: 30px
-			line-height: 38px;
-			border: none
-			letter-spacing: 0.14em;
+			text-decoration: none
+			border-bottom: 1px solid
+			padding-bottom: 1px
 			color: #000000
-			font-size: 15px
-			font-weight: 400
-			background: rgba(255,255,255,0)
+			transition: all 0.3s ease, color 0.3s;
+
+
 		
 
 
@@ -146,7 +122,7 @@ nav
 	height: 793.33px
 	background: url('../img/bg/background.jpg') center (center/cover) no-repeat
 	margin-top: -40px
-	padding: 120px 0
+	padding: 120px 0 0 0
 
 .container
 	box-sizing: border-box
@@ -248,7 +224,7 @@ nav
   overflow: hidden
 
   figure
-    background-image: url('../img/print.png') 
+    background-image: url('../img/print.jpg') 
     background-size: cover
     font-size: 0
     height: 100%
@@ -257,7 +233,7 @@ nav
     width: 100%
 
 #kobavenusab
-  background-image: url('../img/withoutprint.png') 
+  background-image: url('../img/withoutprint.jpg') 
   background-size: cover
   bottom: 0
   border-right: 5px solid rgba(243, 240, 240, 0.7)
@@ -369,6 +345,7 @@ input#pedsumid
 .catalog
 	width: 100%
 	min-height: 680px
+	margin-bottom: 65px
 	h2
 		margin-top: 100px
 		font-weight: 900;
@@ -463,7 +440,7 @@ input#pedsumid
 .order
 	width: 100% 
 	min-height: 846px
-	padding: 65px 5px 79px 0
+	padding: 0 5px 99px 0
 	h2
 		margin: 100px 0 0 0
 		font-weight: 900

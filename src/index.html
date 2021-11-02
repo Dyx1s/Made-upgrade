@@ -11,37 +11,31 @@
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css" integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous">
     <link rel="stylesheet" href="css/style.min.css">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+    <link rel="stylesheet" media="all" href="css/animate.css">
+    <script src="js/wow.min.js"></script>
+    <script>new WOW().init();</script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
 </head>
 <body>
     <header>
         <nav>
             <ul class="menu">
                 <li class="logo_text">Made upgrade</li>
-                <li class="menu_item">
-                    <a href="#" class="menu_link">Главная</a>
-                    <div class="menu_item1">
-                        <button class="menu_link_btn">Каталог</button>
-                    </div>
-                  </li>
-                <div class="menu_item1">
-                    <button class="menu_link_btn">Индивидуальный заказ</button>
-                  </div>
-                  <div class="menu_item1">
-                    <button class="menu_link_btn">Контакты</button>
-                  </div>
+                <li class="menu_item"><a href="#" class="menu_link">Главная</a></li>  
+                <li class="menu_item"><a href="#" class="menu_link">Каталог</a></li>  
+                <li class="menu_item"><a href="#" class="menu_link">Индивидуальный заказ</a></li>
+                <li class="menu_item"><a href="#" class="menu_link">Контакты</a></li>  
                 <li class="menu_logo"><img src="icons/buy.png" alt="buy"></li>  
             </ul>
-            <div class="container">
-
-            </div>
         </nav>
        
     </header>
 
-    <section class="promo">
+    <section class="promo slideInUp wow" data-wow-duration="1.6s">
         <div class="call"><img src="icons/Phone.png" alt="call"></div>
         <div class="container"> 
             <div class="main_title">
@@ -59,7 +53,7 @@
             
     </section>
 
-     <section class="catalog">
+     <section class="catalog slideInUp wow data-wow-delay="0.2s" data-wow-duration="1.6s">
         <div class="container">
             <div class="catalog_title">
                 <h2>каталог made upgrade</h2>
@@ -104,9 +98,9 @@
 
    <section class="order">
         <div class="container">
-            <h2 class="services_title">индвидуальный заказ</h2>
-            <div class="order_photo"><img src="img/trouse.png" alt="trouse"></div>
-            <div class="difficult">
+            <h2 class="services_title slideInUp wow">индвидуальный заказ</h2>
+            <div class="order_photo slideInUp wow"><img src="img/trouse.png" alt="trouse"></div>
+            <div class="difficult slideInUp wow">
                 <h3>сложная кастомизация</h3>
                 <p>Подразумевает разработку сложного дизайна с детальной прорисовкой каждого отдельного элемента и использование нескольких художественных материалов в одной работе.
                 </p>
@@ -114,8 +108,10 @@
                     <a class="btnfos btnfos-4"><span>Оставить заявку</span></a> 
                 </div>  
             </div>
-            <div class="order_photo"><img src="img/Product.jpg" alt="trouse"></div> 
-            <div class="base">             
+            <div class="order_photo slideInUp wow">
+                <img src="img/Product.jpg" alt="trouse">
+            </div> 
+            <div class="base slideInUp wow">             
                 <h3>базовая кастомизация</h3>
                 <p>Включает в себя нанесение надписи или работу с простыми изображениями, не требующими излишней детализации.
                 </p>
@@ -126,7 +122,7 @@
         </div>
     </section>
 
-    <section class="instagramm" id="instagramm">
+    <section class="instagramm slideInUp wow" id="instagramm">
         <div class="container">
         <div class="inst_text">
             <h2>наш инстаграм @made_upgrade</h2>
@@ -135,7 +131,7 @@
                 <a href="#" class="img__link"> <img src="img/Inst2.png" /></a>
                 <a href="#" class="img__link"> <img src="img/inst_video.png" /></a>
                 <a href="#" class="img__link"> <img src="img/Inst4.jpg" /></a>
-        <div class="row">
+        <div class="row slideInUp wow" data-wow-delay="0.3s">
             <div class="handmade">
                 <h3 class="procents">100%</h3>
                 <p class="handmade_text">Ручная работа</p>
@@ -196,7 +192,7 @@
     </footer>
 
     <a class="back_to_top" title="Наверх"><img src="icons/arrowup.png" alt="arrow"></a>
-
     <script src="js/script.js"></script>
+
 </body>
 </html>
