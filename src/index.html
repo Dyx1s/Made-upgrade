@@ -10,7 +10,6 @@
     <link rel="stylesheet" href="css/bootstrap-grid.min.css">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css" integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous">
     <link rel="stylesheet" href="css/style.min.css">
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
     <link rel="stylesheet" media="all" href="css/animate.css">
     <script src="js/wow.min.js"></script>
@@ -22,133 +21,167 @@
 </head>
 <body>
     <header>
-        <nav>
-            <ul class="menu">
-                <li class="logo_text">Made upgrade</li>
-                <li class="menu_item"><a href="#" class="menu_link">Главная</a></li>  
-                <li class="menu_item"><a href="#catalog_title" class="menu_link">Каталог</a></li>  
-                <li class="menu_item"><a href="#order" class="menu_link">Индивидуальный заказ</a></li>
-                <li class="menu_item"><a href="#" class="menu_link">Контакты</a></li>  
-                <li class="menu_logo"><img src="icons/buy.png" alt="buy"></li>  
-            </ul>
-        </nav>
-       
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-md-6" style="margin-top:5px">
+                    <span class="logo_text">Made upgrade</span>
+                </div>
+                <div class="col-md-6">
+                    <nav>
+                        <ul class="menu">
+                            <li class="menu_item"><a href="#" class="menu_link">Главная</a></li>  
+                            <li class="menu_item"><a href="#catalog_title" class="menu_link">Каталог</a></li>  
+                            <li class="menu_item"><a href="#order" class="menu_link">Индивидуальный заказ</a></li>
+                            <li class="menu_item"><a href="#" class="menu_link">Контакты</a></li>  
+                            <li class="menu_buy"><img src="icons/buy.png" alt="buy"></li>  
+                        </ul>
+                    </nav>
+                </div>
+            </div>
+        </div>
     </header>
 
     <section class="promo slideInUp wow" data-wow-duration="1.6s">
-        <div class="call"><img src="icons/Phone.png" alt="call"></div>
-        <div class="container"> 
-            <div class="main_title">
-                <h1>открой для себя <br> мир кастома</h1>
-                <div class="main_btn">
-                    <a class="btnfos btnfos-4"><span>Поехали</span></a> 
-                </div>    
+        <div class="container-fluid">
+            <div class="row justify-content-center">
+                <div class="col-lg-5 col-md-5">
+                    <div class="main_title">
+                        <h1>открой для себя <br> мир кастома</h1>
+                        <div class="main_btn">
+                            <a class="btnfos btnfos-4"><span>Поехали</span></a> 
+                        </div>    
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="slayden-savnena">
+                        <figure>
+                        <div id="kobavenusab"></div>
+                        </figure>
+                        <input oninput="beforeAfter()" onchange="beforeAfter()" type="range" min="0" max="100" value="50" id="pedsumid"/>
+                    </div>
+                </div>
             </div>
-            <div class="slayden-savnena">
-                <figure>
-                <div id="kobavenusab"></div>
-                </figure>
-                <input oninput="beforeAfter()" onchange="beforeAfter()" type="range" min="0" max="100" value="50" id="pedsumid"/>
+            <div class="row justify-content-end">
+                <div class="col-lg-1 col-md-1 "> <a href="#"><img src="icons/Phone.png" alt="call"></a></div>
             </div>
-            
+        </div>           
+    </section>
+    
+     <section class="catalog slideInUp wow data-wow-delay="0.2s data-wow-duration="1.6s">
+        <div class="container-fluid">
+            <div class="row justify-content-center">
+                <div class="col-lg-10 col-md-10 col-xs-10 offset-1">
+                    <div class="catalog_title">
+                        <h2>каталог made upgrade</h2>
+                        <div class="wrapper">
+                            <input type="radio" name="point" id="slide1" checked>
+                            <input type="radio" name="point" id="slide2">
+                            <input type="radio" name="point" id="slide3">
+                            <input type="radio" name="point" id="slide4">
+                            <input type="radio" name="point" id="slide5">
+                            <div class="slider">
+                                <div class="slides slide1">
+                                    <img src="img/Сloak.png" alt="cloak">
+                                    <img src="img/Jacket.png" alt="cloak">
+                                    <img src="img/T-shirt.png" alt="cloak">
+                                 </div>
+                                <div class="slides slide2">
+                                    <img src="img/Jacket.png" alt="cloak">
+                                    <img src="img/Сloak.png" alt="cloak">
+                                    <img src="img/T-shirt.png" alt="cloak">
+                                 </div>
+                                <div class="slides slide3">
+                                    <img src="img/Jacket.png" alt="cloak">
+                                    <img src="img/Сloak.png" alt="cloak">
+                                    <img src="img/T-shirt.png" alt="cloak">
+                                </div>
+                                <div class="slides slide4">
+                                    <img src="img/Jacket.png" alt="cloak">
+                                    <img src="img/Сloak.png" alt="cloak">
+                                    <img src="img/T-shirt.png" alt="cloak">
+                                </div>                        
+                            </div>
+                            <div class="controls">
+                                <label for="slide1"></label>
+                                <label for="slide2"></label>
+                                <label for="slide3"></label>
+                                <label for="slide4"></label>
+                            </div>
+                        </div>  
+                    </div>
+                </div>
+            </div>
+        </div> 
     </section>
 
-     <section class="catalog slideInUp wow data-wow-delay="0.2s" data-wow-duration="1.6s">
-        <div class="container">
-            <div id="catalog_title">
-                <h2>каталог made upgrade</h2>
-                <div class="wrapper">
-                    <input type="radio" name="point" id="slide1" checked>
-                    <input type="radio" name="point" id="slide2">
-                    <input type="radio" name="point" id="slide3">
-                    <input type="radio" name="point" id="slide4">
-                    <input type="radio" name="point" id="slide5">
-                    <div class="slider">
-                        <div class="slides slide1">
-                            <img src="img/Сloak.png" alt="cloak">
-                            <img src="img/Jacket.png" alt="cloak">
-                            <img src="img/T-shirt.png" alt="cloak">
-                         </div>
-                        <div class="slides slide2">
-                            <img src="img/Jacket.png" alt="cloak">
-                            <img src="img/Сloak.png" alt="cloak">
-                            <img src="img/T-shirt.png" alt="cloak">
-                         </div>
-                        <div class="slides slide3">
-                            <img src="img/Jacket.png" alt="cloak">
-                            <img src="img/Сloak.png" alt="cloak">
-                            <img src="img/T-shirt.png" alt="cloak">
-                        </div>
-                        <div class="slides slide4">
-                            <img src="img/Jacket.png" alt="cloak">
-                            <img src="img/Сloak.png" alt="cloak">
-                            <img src="img/T-shirt.png" alt="cloak">
-                        </div>                        
-                    </div>
-                    <div class="controls">
-                        <label for="slide1"></label>
-                        <label for="slide2"></label>
-                        <label for="slide3"></label>
-                        <label for="slide4"></label>
-                    </div>
-                </div>  
+   <section class="order">
+        <div class="container-fluid">
+            <div class="row justify-content-center">
+                <div class="col-lg-10 col-md-10 col-xs-10 offset-1">
+                    <h2 class="slideInUp wow">индвидуальный заказ</h2>
+                </div>
+            </div>    
+            <div class="row justify-content-center">    
+                <div class="difficult slideInUp wow col-lg-5 col-md-5 col-xs-5 offset-1 ">
+                        <div class="order_photo slideInUp wow"><img src="img/trouse.png" alt="trouse"></div>
+                </div>
+                <div class="difficult slideInUp wow col-lg-5 col-md-5 col-xs-5">      
+                        <h3>сложная кастомизация</h3>
+                        <p>Подразумевает разработку сложного дизайна с детальной прорисовкой каждого отдельного элемента и использование нескольких художественных материалов в одной работе.
+                        </p>
+                        <div class="main_btn_order">
+                            <a class="btnfos btnfos-4"><span>Оставить заявку</span></a> 
+                        </div>  
+                </div>
             </div>
-<!--  -->
-    </section>
-
-   <section id="order">
-        <div class="container">
-            <h2 class="services_title slideInUp wow">индвидуальный заказ</h2>
-            <div class="order_photo slideInUp wow"><img src="img/trouse.png" alt="trouse"></div>
-            <div class="difficult slideInUp wow">
-                <h3>сложная кастомизация</h3>
-                <p>Подразумевает разработку сложного дизайна с детальной прорисовкой каждого отдельного элемента и использование нескольких художественных материалов в одной работе.
-                </p>
-                <div class="main_btn_order">
-                    <a class="btnfos btnfos-4"><span>Оставить заявку</span></a> 
-                </div>  
-            </div>
-            <div class="order_photo slideInUp wow">
-                <img src="img/Product.jpg" alt="trouse">
-            </div> 
-            <div class="base slideInUp wow">             
-                <h3>базовая кастомизация</h3>
-                <p>Включает в себя нанесение надписи или работу с простыми изображениями, не требующими излишней детализации.
-                </p>
-                <div class="main_btn_order">
-                    <a class="btnfos btnfos-4"><span>Оставить заявку</span></a> 
-                </div>  
+            <div class="row justify-content-center">      
+                <div class="base slideInUp wow col-lg-5 col-md-5 col-xs-5 offset-1 ">   
+                        <div class="order_photo slideInUp wow"><img src="img/Product.jpg" alt="trouse"></div>
+                </div> 
+                <div class="base slideInUp wow col-lg-5 col-md-5 col-xs-5 ">
+                    <h3>базовая кастомизация</h3>
+                    <p>Включает в себя нанесение надписи или работу с простыми изображениями, не требующими излишней детализации.</p>
+                    <div class="main_btn_order">
+                        <a class="btnfos btnfos-4"><span>Оставить заявку</span></a> 
+                    </div>  
+                </div>                   
             </div>
         </div>
     </section>
 
     <section class="instagramm slideInUp wow" id="instagramm">
-        <div class="container">
-        <div class="inst_text">
-            <h2>наш инстаграм @made_upgrade</h2>
-            <p>Подписывайся и получи скидку -10% на первый заказ</p>
-                <a href="#" class="img__link"> <img src="img/Inst1.png" /></a>
-                <a href="#" class="img__link"> <img src="img/Inst2.png" /></a>
-                <a href="#" class="img__link"> <img src="img/inst_video.png" /></a>
-                <a href="#" class="img__link"> <img src="img/Inst4.jpg" /></a>
-        <div class="row slideInUp wow" data-wow-delay="0.3s">
-            <div class="handmade">
-                <h3 class="procents">100%</h3>
-                <p class="handmade_text">Ручная работа</p>
-            </div>
-            <div class="unique">
-                <h3 class="procents">100%</h3>
-                <p class="uniqe_text">Уникальность продукта</p>
-            </div>
-            <div class="materials">
-                <h3 class="procents">100%</h3>
-                <p class="materials_text">Качественные <br> материалы</p>        
-            
-            </div>
-        </div>        
-
-
-        </div>
+        <div class="container-fluid">
+            <div class="row justify-content-center">
+                <div class="col-lg-10 col-md-10 col-xs-10 offset-1">
+                    <div class="inst_text">
+                        <h2>наш инстаграм @made_upgrade</h2>
+                        <p>Подписывайся и получи скидку -10% на первый заказ</p>
+                            <a href="#" class="img__link"> <img src="img/Inst1.png"/></a>
+                            <a href="#" class="img__link"> <img src="img/Inst2.png"/></a>
+                            <a href="#" class="img__link"> <img src="img/inst_video.png"/></a>
+                            <a href="#" class="img__link"> <img src="img/Inst4.jpg"/></a>
+                    </div>
+                </div>
+            </div>              
+            <div class="row slideInUp wow" data-wow-delay="0.3s">
+                <div class="col-lg-10 col-md-10 col-xs-10 offset-1">
+                    <div class="procents_row">
+                        <div class="handmade">
+                            <h3 class="procents">100%</h3>
+                            <p class="handmade_text">Ручная работа</p>
+                        </div>
+                        <div class="unique">
+                            <h3 class="procents">100%</h3>
+                            <p class="uniqe_text">Уникальность продукта</p>
+                        </div>
+                        <div class="materials">
+                            <h3 class="procents">100%</h3>
+                            <p class="materials_text">Качественные <br> материалы</p>        
+                        </div>
+                    </div>
+                    
+                </div>
+            </div>        
     </section>
 
     <footer>
@@ -192,6 +225,7 @@
     </footer>
 
     <a class="back_to_top" title="Наверх"><img src="icons/arrowup.png" alt="arrow"></a>
+    
     <script src="js/script.js"></script>
 
 </body>

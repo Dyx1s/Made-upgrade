@@ -15,90 +15,57 @@ $second-color: #000000
 	font-weight: 400
 
 p
-	text-align: justify	
+	text-align: justify
 
+h2
+	font-weight: 900
+	font-size: 25px
+	line-height: 34px
+	letter-spacing: 0.26em
+	text-transform: uppercase
+	color: #000000		
+		
+.container-fluid
+	margin-top: 10px
 header
 	position: relative
-	.container
-		font-size: 13px
-	.firstheader
-		display: block
-		height: 78px
-		background: rgba(202, 193, 213, 1);
-		font-size: 15px
-		box-shadow: 0 0 10px rgba(0,0,0,0.2)
-		&_phone
-			margin-top: 20px
-			&::before
-				content: ''
-				position: absolute
-				width: 26px
-				height: 26px
-				left: -11px
-				top: 24px
-				background: url(../icons/phone.png) center center no-repeat
-		&_ort
-			margin-top: 28px
-			text-align: center
-		&_adress
-			margin-top: 20px	
-			&::before
-				content: ''
-				position: absolute
-				width: 26px
-				height: 26px
-				left: -17px
-				top: 24px
-				background: url(../icons/novigation.png) center center no-repeat
-		&_time
-			margin-top: 20px
-			&::before
-				content: ''
-				position: absolute
-				width: 26px
-				height: 26px
-				left: -18px
-				top: 24px
-				background: url(../icons/time.png) center center no-repeat		
-
+	
+.logo_text 
+	width: 167px
+	height: 15px
+	font-weight: bold
+	font-size: 16px
+	line-height: 19px
+	letter-spacing: 0.205em
+	text-align: center
+	text-transform: uppercase
+	color: #000000
+	
 nav
-	width: 100%
+	width: 98%
 	height: 85px
 	background-color: #fff
 	z-index: 5
-	background: rgba(255,255,255,0);
+	background: rgba(255,255,255,0)
 	position: absolute
 .menu //из другой менюхи
 	display: flex
 	justify-content: space-between
-	padding: 50px 0 93px 0 
+	padding-right: 10px
 	margin: 0
 	list-style-type: none
 	z-index: 2
-	.logo_text 
-		margin: 23px 615px 0 40px
-		width: 167px
-		height: 15px
-		font-weight: bold
-		font-size: 16px
-		line-height: 19px
-		letter-spacing: 0.205em
-		text-transform: uppercase
-		color: #000000	
-	&_logo
+	&_buy
 		position: relative
 		display: block
-		margin: 21px 0 0 -5px
+		margin: 5px 0 0 -20px 
 		cursor: pointer
-		padding: 0 20px 0 0
-	&_item
-		height: 0
 	&_link
 		position: relative
 		display: block
 		right: 25px
-		margin-left: 0px
-		padding: 15px 0 15px 
+		/* margin-left: 0px */
+		/* padding: 15px 0 15px  */
 		line-height: 38px
 		letter-spacing: 0.14em;
 		color: #000000
@@ -337,9 +304,8 @@ input#pedsumid
 	position: absolute 
 	width: 59px
 	height: 59px
-	bottom: 0; 
+	bottom: 0 
 	right: 0
-	margin: 0 20px 40px 0
 
 
 .catalog
@@ -347,13 +313,8 @@ input#pedsumid
 	min-height: 680px
 	margin-bottom: 65px
 	h2
-		margin-top: 100px
-		font-weight: 900;
-		font-size: 25px;
-		line-height: 34px;
-		letter-spacing: 0.26em;
-		text-transform: uppercase;
-		color: #000000;
+		margin-top: 10px
+
 .wrapper
   height: 100%
   margin: 104px 0 -100px 0 
@@ -397,8 +358,7 @@ input#pedsumid
     display: none
 
   .controls
-    left: 50%
-    margin-left: -98px
+    left: 35%
     position: absolute
 
   label
@@ -441,21 +401,13 @@ input#pedsumid
 	width: 100% 
 	min-height: 846px
 	padding: 0 5px 99px 0
-	.services_title
-		margin: 100px 0 0 0
-		font-weight: 900
-		font-size: 25px
-		line-height: 34px
-		letter-spacing: 0.26em
-		text-transform: uppercase
-		color: #000000
-	&_photo
-		margin-top: 85px	
-.difficult
+	h2
+		margin: 100px 0 85px 0
+
+.difficult, .base
 	width: 50%
 	display: block
 	float: right
-	margin-top: -350px
 	h3
 		font-style: normal
 		font-weight: 900
@@ -478,57 +430,16 @@ input#pedsumid
 		padding: 0 44px 0 44px	
 .main_btn_order
 	margin: 26px 0 0 175px		
-		
-.base
-	width: 50%
-	display: block
-	float: right
-	margin-top: -325px
-	h3
-		font-style: normal
-		font-weight: 900
-		font-size: 20px
-		line-height: 27px
-		letter-spacing: 0.2em
-		text-transform: uppercase
-		margin: 24px 0px
-		text-align: center
-		color: #000000
-	p
-		font-style: normal
-		font-weight: normal
-		font-size: 15px
-		line-height: 24px
-		text-align: center
-		letter-spacing: 0.18em
-		color: #000000 
-		margin: 24px 0px
-		padding: 0 44px 0 44px	
-	.order_btn
-		font-weight: 500
-		font-size: 15px
-		line-height: 18px
-		text-align: center
-		letter-spacing: 0.135em
-		color: #FFFFFF
-		width: 211px
-		height: 60px
-		background: #050505
-		box-shadow: 0px 4px 7px rgba(39, 57, 82, 0.39)
-		border-radius: 3px
-		margin-left: 160px
+.difficult
+	margin-bottom: 85px		
+
 
 .instagramm
 	width: 100%
 	min-height: 630px
 	h2
 		margin: 100px 0 0 0
-		font-weight: 900
-		font-size: 25px
-		line-height: 34px
-		letter-spacing: 0.26em
-		text-transform: uppercase
-		color: #000000		
+	
 	p
 		font-style: normal
 		font-weight: normal
@@ -541,8 +452,7 @@ input#pedsumid
 		margin-right: 19px
 	a
 		position: relative	
-		display: block
-		float: left
+		display: inline-block
 	a:after 
 		content: ''
 		width: 255px
@@ -567,59 +477,28 @@ input#pedsumid
 	a:hover:after  
 		opacity: 1	
 
-		
-.handmade
-	margin: 100px 173px 100px 0;
+.procents_row
+	width: 100%
+	display: flex
+	justify-content: space-between
+
+.handmade, .unique, .materials
+	display: inline-block
+	margin: 100px 0 100px 0
 	width: 255px	
-	height: 110px	
-	text-align: center
+	height: 110px
 	.procents
-		font-style: normal;
-		font-weight: bold;
-		font-size: 45px;
-		line-height: 62px;
-		letter-spacing: 0.045em;
-		color: #000000;		
+		font-style: normal
+		font-weight: bold
+		font-size: 45px
+		line-height: 62px
+		letter-spacing: 0.045em
+		color: #000000		
 		text-align: center
 		margin-bottom: 0
 	p
 		text-align: center
 		margin-top: 0
-.unique	
-	margin: 100px 173px 100px 0;
-	width: 255px	
-	height: 100px	
-	text-align: center
-	.procents
-		font-style: normal
-		font-weight: bold;
-		font-size: 45px;
-		line-height: 62px;
-		letter-spacing: 0.045em;
-		color: #000000;		
-		text-align: center
-		margin-bottom: 0
-	p
-		text-align: center
-		margin-top: 0	
-.materials
-	margin: 100px 0px 100px 0;
-	width: 255px	
-	height: 110px	
-	text-align: center
-	.procents
-		font-style: normal
-		font-weight: bold;
-		font-size: 45px;
-		line-height: 62px;
-		letter-spacing: 0.045em;
-		color: #000000;		
-		text-align: center
-		margin-bottom: 0
-	p
-		text-align: center
-		margin-top: 0	
-
 
 
 footer 
@@ -633,12 +512,12 @@ footer
 	&_logo
 		width: 171px 
 		margin: 184px 210px 170px 0
-		font-weight: 900;
-		font-size: 16px;
-		line-height: 22px;
-		letter-spacing: 0.26em;
-		text-transform: uppercase;
-		color: #FFFFFF;
+		font-weight: 900
+		font-size: 16px
+		line-height: 22px
+		letter-spacing: 0.26em
+		text-transform: uppercase
+		color: #FFFFFF
 	&_menu
 		margin: 100px 315px 86px 0
 		.down_menu
@@ -660,12 +539,12 @@ footer
 		margin: 0 34px 39px 0
 		float: right
 	p
-		font-style: normal;
-		font-weight: bold;
-		font-size: 15px;
-		line-height: 18px;
-		text-align: right;
-		letter-spacing: 0.22em;
+		font-style: normal
+		font-weight: bold
+		font-size: 15px
+		line-height: 18px
+		text-align: right
+		letter-spacing: 0.22em
 		color: #FFFFFF
 		margin-bottom: 17px
 		margin-right: 28px
